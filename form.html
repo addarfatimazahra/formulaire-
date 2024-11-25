@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <h1 class="title">Inscription</h1>
+    <p class="description">Inscrivez-vous et améliorez vos compétences grâce à plusieurs formations gratuites sur notre site. Dépêchez-vous ! Les places sont limitées.</p>
+    
+    <form class="registration-form">
+        <fieldset class="form-fieldset">
+            <label for="name" class="form-label">Nom d'utilisateur</label><br>
+            <input type="text" name="name" id="name" class="form-input" placeholder="Entrez votre nom"><br>
+            
+            <label for="email" class="form-label">Email personnel</label><br>
+            <input type="email" name="email" id="email" class="form-input" placeholder="Entrez votre email"><br>
+            
+            <label for="age" class="form-label">Âge</label><br>
+            <input type="number" name="age" id="age" class="form-input" placeholder="Entrez votre âge"><br>
+            
+            <label for="choix" class="form-label">Quel langage voulez-vous étudier ?</label><br>
+            <select name="option" id="option" class="form-select" required>
+                <option value="">--Sélectionnez une option--</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="sql">SQL</option>
+            </select><br>
+            
+            <label class="form-label">Combien d'heures préférez-vous travailler ?</label><br>
+            <input type="radio" name="type1" id="type1" value="option1" class="form-radio" checked>
+            <label for="type1">1h-2h</label><br>
+            <input type="radio" name="type1" id="type2" value="option2" class="form-radio">
+            <label for="type2">2h-3h</label><br>
+            <input type="radio" name="type1" id="type3" value="option3" class="form-radio">
+            <label for="type3">3h-4h</label><br>
+            
+            <label class="form-label">Quelle est votre formation intéressée ?</label><br>
+            <input type="checkbox" name="type1" id="check1" class="form-checkbox">
+            <label for="check1">Backend</label><br>
+            <input type="checkbox" name="type2" id="check2" class="form-checkbox">
+            <label for="check2">Frontend</label><br>
+            <input type="checkbox" name="type3" id="check3" class="form-checkbox">
+            <label for="check3">Full Stack</label><br>
+            <input type="checkbox" name="type4" id="check4" class="form-checkbox">
+            <label for="check4">Database</label><br>
+            
+            <label for="text" class="form-label">Entrez une description de vos besoins</label><br>
+            <textarea name="text" id="text" class="form-textarea"></textarea><br>
+            
+            <button type="submit" class="form-button">Soumettre</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
